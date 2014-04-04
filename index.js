@@ -1,4 +1,4 @@
-var inherit = require('inherit');
+var inherits = require('util').inherits;
 var WuiDom = require('WuiDom');
 
 function WuiImage(asset) {
@@ -11,7 +11,7 @@ function WuiImage(asset) {
 	}
 }
 
-inherit(WuiImage, WuiDom);
+inherits(WuiImage, WuiDom);
 module.exports = WuiImage;
 
 
